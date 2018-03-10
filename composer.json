@@ -1,1 +1,52 @@
-
+{
+    "name": "genial-framework/logger",
+    "description": "Extremely fast and eloquent php logger.",
+    "keywords": [
+        "php72",
+        "php-library",
+        "php-component",
+        "secure-by-default",
+        "php-logger",
+        "ext-json"
+    ],
+    "license": "GPL-3.0",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Nicholas English",
+            "email": "nenglish0820@outlook.com",
+            "homepage": "https://github.com/obozaxy",
+            "role": "Developer"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Genial\\Logger\\": "./src"
+        },
+        "files": [
+            "./boot/initialize.php",
+            "./boot/version.php"
+        ]
+    },
+    "require": {
+        "php": "^7.2"
+    },
+    "suggest": {
+        "ext-json": "Be able log data in json format."
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^5",
+        "squizlabs/php_codesniffer": "^2.7",
+        "vimeo/psalm": "^0|^1"
+    },
+    "scripts": {
+        "check-style": "phpcs -p --standard=PSR2 --runtime-set ignore_errors_on_exit 1 --runtime-set ignore_warnings_on_exit 1 src tests",
+        "fix-style": "phpcbf -p --standard=PSR2 --runtime-set ignore_errors_on_exit 1 --runtime-set ignore_warnings_on_exit 1 src tests"
+    },
+    "config": {
+        "preferred-install": "dist",
+        "optimize-autoloader": true,
+        "sort-packages": true
+    },
+    "prefer-stable": true
+}
