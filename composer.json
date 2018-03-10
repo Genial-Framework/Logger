@@ -31,9 +31,6 @@
     "require": {
         "php": "^7.2"
     },
-    "suggest": {
-        "ext-json": "Be able log data in json format."
-    },
     "require-dev": {
         "phpunit/phpunit": "^7",
         "squizlabs/php_codesniffer": "^3",
