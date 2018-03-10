@@ -17,7 +17,7 @@ class Register implements RegisterInterface
     /**
      * @var object $config The logger config.
      */
-    protected $config;
+    public $config;
     
     /**
      * Register a new logger.
@@ -29,7 +29,7 @@ class Register implements RegisterInterface
     function __construct(ConfigInterface $config)
     {
         $this->config = $config;
-        List::new();
+        List::new($config);
     }
     
 }
