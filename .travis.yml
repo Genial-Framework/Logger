@@ -2,14 +2,14 @@ language: php
 sudo: required
 dist: trusty
 php:
-    - "7.2"
-    - "master"
-    - "nightly"
+    - 7.2
+    - master
+    - nightly
 matrix:
     fast_finish: true
     allow_failures:
-        - php: "master"
-        - php: "nightly"
+        - php: master
+        - php: nightly
 os:
     - windows
     - linux
