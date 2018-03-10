@@ -35,7 +35,7 @@
         "ext-json": "Be able log data in json format."
     },
     "require-dev": {
-        "phpunit/phpunit": "^5",
+        "phpunit/phpunit": "^7",
         "squizlabs/php_codesniffer": "^2.7",
         "vimeo/psalm": "^0|^1"
     },
