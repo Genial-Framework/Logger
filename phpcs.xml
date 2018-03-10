@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<ruleset name="PHP_CodeSniffer">
+    <rule ref="PSR2" />
+    <file>./src</file>
+    <file>./tests</file>
+    <file>./boot/initialize.php</file>
+    <file>./boot/version.php</file>
+</ruleset>
