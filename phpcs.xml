@@ -3,6 +3,5 @@
     <rule ref="PSR2" />
     <file>./src</file>
     <file>./tests</file>
-    <file>./boot/initialize.php</file>
-    <file>./boot/version.php</file>
+    <file>./boot</file>
 </ruleset>
