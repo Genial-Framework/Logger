@@ -5,7 +5,8 @@ declare(strict_types=1);
  *
  * @link    <https://github.com/genial-framework/logger> Github repository.
  * @license <https://github.com/genial-framework/logger/blob/master/LICENSE> GPL-3.0 License.
- *
+ */
+
 namespace Genial\Logger\Exception;
 
 /**
