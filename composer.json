@@ -30,6 +30,7 @@
     },
     "require": {
         "php": "^7.2",
+        "psr/log": "*",
         "ext-seaslog": "^1"
     },
     "require-dev": {
