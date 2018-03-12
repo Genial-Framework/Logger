@@ -9,13 +9,9 @@ declare(strict_types=1);
 
 namespace Genial\Logger\Config;
 
-use Genial\Logger\Exception\{
-    RuntimeException,
-    InvalidArgumentException,
-    UnexpectedValueException,
-    DomainException
-};
-
+use Genial\Logger\Exception\RuntimeException,
+use Genial\Logger\Exception\UnexpectedValueException,
+use Genial\Logger\Exception\DomainException;
 use Traversable;
 
 /**
@@ -23,27 +19,6 @@ use Traversable;
  */
 class Validate extends Traversable implements ValidateInterface
 {
-    
-    /**
-     * Validate the configuration data type.
-     *
-     * @param mixed $config The logger configuration.
-     *
-     * @throws InvalidArgumentException If the configuration has
-     *                                  an invalid data type.
-     *
-     * @return void.
-     */
-    private function validDataType($config): void
-    {
-        if (!\is_array($config) && !($config instanceof Traversable))
-        {
-            throw new InvalidArgumentException(\sprintf(
-                'The configuration has an invalid data type. Passed "%s".',
-                \gettype($config)
-            ));
-        }
-    }
     
     /**
      * Validate the configuraton depth.
@@ -57,8 +32,7 @@ class Validate extends Traversable implements ValidateInterface
      */
     private function validDepth($config): void
     {
-        if (\depth($config) != 2)
-        {
+        if (\depth($config) != 2) {
             throw new DomainException(\sprintf(
                 'The configuration has incorrect depth. Passed "%s".',
                 \depth($config)
