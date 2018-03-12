@@ -26,11 +26,16 @@
         "files": [
             "./boot/initialize.php",
             "./boot/version.php"
+        ],
+        "classmap": [
+            "./lib",
+            "./helper"
         ]
     },
     "require": {
         "php": "^7.2",
         "psr/log": "*",
+        "symfony/yaml": "^4",
         "ext-seaslog": "^1"
     },
     "require-dev": {
@@ -43,8 +48,10 @@
         "fix-style": "phpcbf -p --standard=PSR2 --runtime-set ignore_errors_on_exit 1 --runtime-set ignore_warnings_on_exit 1 src tests"
     },
     "config": {
+        "classmap-authoritative": true,
         "preferred-install": "dist",
         "optimize-autoloader": true,
+        "apcu-autoloader": true,
         "sort-packages": true
     },
     "prefer-stable": true
