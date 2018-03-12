@@ -9,8 +9,8 @@ declare(strict_types=1);
 
 namespace Genial\Logger\Config;
 
-use Genial\Logger\Exception\RuntimeException,
-use Genial\Logger\Exception\UnexpectedValueException,
+use Genial\Logger\Exception\RuntimeException;
+use Genial\Logger\Exception\UnexpectedValueException;
 use Genial\Logger\Exception\DomainException;
 use Traversable;
 
